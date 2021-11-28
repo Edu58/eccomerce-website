@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  min-height: 5vh;
+  background-color: blue;
+  padding: 0.5rem;
+}
+
+nav img {
+  height: 3rem;
+}
+
+nav .bars {
+  display: none;
+}
+
+nav .bars i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+nav .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .list p {
+  margin: 0 1.5rem;
+  margin: 0rem 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+nav .list p:hover {
+  background-color: rgb(22, 223, 223);
+  transition: .5s;
+}
+
+nav .list p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .list p a i {
+    font-size: 1.2rem;
+}
+
+nav .list .home {
+  padding: 0.5rem 1rem;
+  background-color: rgb(35, 117, 240);
+}
+
+@media screen and (max-width: 767px) {
+  nav .bars {
+    display: block;
+  }
+
+  nav .list {
+    display: none;
+  }
+}
+
+.slideshow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.slideshow .slides {
+  width: 80%;
+  height: 70vh;
+  border-radius: 2px;
+  background: url("/images/Lenovo-Legion-5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.brands {
+  margin: 2rem 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.brands .brand {
+  background-color: blue;
+  padding: 1rem 1.5rem;
+  border-radius: 2px;
+  transition: all 0.5s;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.brands .brand:hover {
+  transition: ease 0.2s;
+  background-color: rgb(22, 223, 223);
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: auto;
+}
+
+.products h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.products .product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 0.2rem;
+}
+
+.products .product-grid .product-card {
+  background-color: rgb(22, 223, 223);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 2px;
+  width: 15rem;
+  height: auto;
+  margin: 1rem;
+}
+
+.products .product-grid .product-card img {
+  height: 10rem;
+  width: auto;
+}
+
+.products .product-grid .product-card button {
+  width: 50%;
+  height: 2rem;
+  margin-bottom: 0.6rem;
+  background-color: rgb(241, 138, 156);
+  border: transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.products .product-grid .product-card button:hover {
+    transition: .5s;
+    background-color: rgb(255, 102, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .products .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .products .product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .slideshow .slides {
+    width: 95%;
+    height: 25rem;
+  }
+}
+
+.discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0.2rem 0 0;
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+  background-color: blue;
+}
+
+.discount-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+}
+
+.discount-info img {
+  height: 14rem;
+  width: auto;
+}
+
+.discount-info .details .discount-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 10rem;
+}
+
+.discount-info .details .discount-buttons strike {
+  background-color: gray;
+  text-align: center;
+  align-items: center;
+  border: transparent;
+  border-radius: 2px;
+  margin: 1rem 0 1rem 0;
+}
+
+.discount-info .details .discount-buttons button {
+  height: 2.5rem;
+  margin: 0.5rem 0 0 0;
+  background-color: rgb(241, 138, 156);
+  color: #fff;
+  border: transparent;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .discount .discount-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .discount-info img {
+    height: 10rem;
+    width: auto;
+    margin-bottom: 2rem;
+  }
+
+  .discount-info .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .discount-info img {
+    height: 7.5rem;
+    width: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(241, 138, 156);
+  color: #fff;
+  height: auto;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.newsletter h3 {
+  margin-bottom: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+}
+
+.newsletter form input {
+  height: 3rem;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  border: transparent;
+  border-radius: 2px;
+  outline: none;
+}
+
+.newsletter form button {
+  height: 3rem;
+  font-size: 1rem;
+  background-color: red;
+  color: #fff;
+  border: transparent;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  background-color: blue;
+  height: auto;
+  color: #fff;
+}
+
+footer a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer a:hover {
+    transition: ease .5s;
+    color:aqua;
+}
+
+footer i {
+  font-size: 1.5rem;
+  margin: 0.5rem 1rem 0 0;
+}
+
+.copyright {
+  background-color: rgb(109, 106, 106);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: blue;
+    height: auto;
+    color: #fff;
+  }
+
+  footer .socials,
+  .categories,
+  .contacts {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .newsletter form input {
+    height: 2.5rem;
+    width: 15rem;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    border: transparent;
+    border-radius: 2px;
+    outline: none;
+  }
+}
