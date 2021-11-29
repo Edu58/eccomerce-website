@@ -27,7 +27,16 @@ nav .bars {
   display: none;
 }
 
+nav .times {
+    display: none;
+  }
+
 nav .bars i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+nav .times i {
   font-size: 1.5rem;
   color: #fff;
 }
@@ -55,6 +64,7 @@ nav .list p:hover {
 nav .list p a {
     text-decoration: none;
     color: #fff;
+    transition: 2s;
 }
 
 nav .list p a i {
@@ -67,12 +77,36 @@ nav .list .home {
 }
 
 @media screen and (max-width: 767px) {
+
   nav .bars {
     display: block;
+  }
+  
+  nav .times {
+    display: none;
   }
 
   nav .list {
     display: none;
+  }
+
+  nav .list.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    background-color: blue;
+    height: 100%;
+    width: 60%;
+    top: 8%;
+    right: 0;
+    z-index: 1;
+    transition: 2s;
+  }
+
+  nav .times.close {
+    display: block;
+    transition: .5s;
   }
 }
 
@@ -85,7 +119,7 @@ nav .list .home {
 
 .slideshow .slides {
   width: 80%;
-  height: 70vh;
+  height: 90vh;
   border-radius: 2px;
   background: url("/images/Lenovo-Legion-5.png");
   background-position: center;
