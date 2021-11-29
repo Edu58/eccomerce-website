@@ -1,297 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Required Core Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <!-- Optional Theme Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Laptop</title>
-    <link rel="icon" type="image/jpg" href="/images/laptop-svgrepo-com.svg">
-</head>
-<body>
+    <link rel="icon" type="image/jpg" href="/images/laptop-svgrepo-com.svg" />
+  </head>
+  <body>
     <nav>
-        <img src="/images/laptop-svgrepo-com.svg" alt="">
+      <img src="/images/laptop-svgrepo-com.svg" alt="" />
 
-        <div class="bars" id="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="times" id="closeMenu">
-            <i class="fas fa-times"></i>
-        </div>
-        <div class="list" id="link-list">
-            <p class="home"><a href="">HOME</a></p>
-            <P><a href="">PRODUCTS</a></P>
-            <P><a href="">BRANDS</a></P>
-            <P><a href=""><i class="fas fa-shopping-cart"></i></a></P>
-        </div>
+      <div class="bars" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="times" id="closeMenu">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="list" id="link-list">
+        <p class="home"><a href="">HOME</a></p>
+        <p><a href="">PRODUCTS</a></p>
+        <p><a href="">BRANDS</a></p>
+        <p>
+          <a href=""><i class="fas fa-shopping-cart"></i></a>
+        </p>
+      </div>
     </nav>
 
     <section class="slideshow">
-        <div class="slides" id="slides-images">
+      <div class="slides" id="slides-images">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img src="/images/Acer-Swift-3.png" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img src="/images/Asus-Zenbook.png" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img src="/images/Dell+XPS+13.png" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img src="/images/Legion-5.png" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img src="/images/gaming.jpg" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img src="/images/ASUS-gaming.png" alt="" />
+              </li>
+              <li class="glide__slide">
+                <img src="/images/asus.png" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+    </div>
         </div>
+      </div>
     </section>
 
     <section class="brands">
-        <div class="brand" id="hp"><p>HP</p></div>
-        <div class="brand" id="lenovo"><p>LENOVO</p></div>
+      <div class="brand" id="hp"><p>HP</p></div>
+      <div class="brand" id="lenovo"><p>LENOVO</p></div>
+      <div class="brand"><p>DELL</p></div>
+      <div class="brand"><p>ACER</p></div>
+      <div class="brand"><p>ALIENWARE</p></div>
+      <div class="brand"><p>APPLE</p></div>
+      <div class="brand"><p>ASUS</p></div>
+      <div class="brand"><p>MSI</p></div>
+    </section>
+
+    <section class="products">
+      <h1>Acer</h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <p>Acer Swift 3</p>
+          <img src="/images/Acer-Swift-3.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Acer Swift 3</p>
+          <img src="/images/Acer-Swift-3.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Acer Swift 3</p>
+          <img src="/images/Acer-Swift-3.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Acer Swift 3</p>
+          <img src="/images/Acer-Swift-3.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Acer Swift 3</p>
+          <img src="/images/Acer-Swift-3.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Acer Swift 3</p>
+          <img src="/images/Acer-Swift-3.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Acer Swift 3</p>
+          <img src="/images/Acer-Swift-3.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Acer Swift 3</p>
+          <img src="/images/Acer-Swift-3.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+      </div>
+
+      <h1>ASUS</h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <p>Asus Zenbook</p>
+          <img src="/images/Asus-Zenbook.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Asus Zenbook</p>
+          <img src="/images/Asus-Zenbook.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Asus Zenbook</p>
+          <img src="/images/Asus-Zenbook.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Asus Zenbook</p>
+          <img src="/images/Asus-Zenbook.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Asus Zenbook</p>
+          <img src="/images/Asus-Zenbook.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Asus Zenbook</p>
+          <img src="/images/Asus-Zenbook.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Asus Zenbook</p>
+          <img src="/images/Asus-Zenbook.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+      </div>
+
+      <h1>DELL</h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <p>Dell xps 13</p>
+          <img src="/images/dell-xps-13.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Dell xps 13</p>
+          <img src="/images/dell-xps-13.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Dell xps 13</p>
+          <img src="/images/dell-xps-13.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Dell xps 13</p>
+          <img src="/images/dell-xps-13.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Dell xps 13</p>
+          <img src="/images/dell-xps-13.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+      </div>
+
+      <h1>LENOVO</h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <p>Lenovo Legion 5</p>
+          <img src="/images/Legion-5.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Lenovo Legion 5</p>
+          <img src="/images/Legion-5.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Lenovo Legion 5</p>
+          <img src="/images/Legion-5.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Lenovo Legion 5</p>
+          <img src="/images/Legion-5.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Lenovo Legion 5</p>
+          <img src="/images/Legion-5.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Lenovo Legion 5</p>
+          <img src="/images/Legion-5.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Lenovo Legion 5</p>
+          <img src="/images/Legion-5.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <p>Lenovo Legion 5</p>
+          <img src="/images/Legion-5.png" alt="" />
+          <button type="submit">specifications</button>
+          <button type="submit">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="discount">
+      <div class="discount-info">
+        <img src="/images/macbook-pro-2021-14in.png" alt="" />
+
+        <div class="details">
+          <strong>Macbook Pro 2021 14'</strong>
+          <strong>specifications</strong>
+          <p>
+            Display: 14.2, 3024x1964 native resolution' <br />
+            Liquid Retina XDR display <br />
+            120 Hz refresh rate <br />
+            16GB RAM/32 GB RAM/64GB RAM <br />
+            512 GB SSD/1TB SSD <br />
+          </p>
+          <div class="discount-buttons">
+            <strike>$2500</strike>
+            <button type="submit">GET NOW AT $2000</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h3>
+        Subscribe to our weekly newsletter and receive updates on the latest
+        discounts and laptops
+      </h3>
+      <form action="">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email" required />
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="socials">
+        <h3>Socials</h3>
+        <a href=""><i class="fab fa-facebook-f"></i>Facebook</a>
+        <a href=""><i class="fab fa-twitter"></i>Twitter</a>
+        <a href=""><i class="fab fa-instagram"></i>Instagram</a>
+        <a href=""><i class="fab fa-whatsapp"></i>Whatsapp</a>
+      </div>
+      <div class="categories">
+        <h3>Categories</h3>
+        <div class="brand"><p>HP</p></div>
+        <div class="brand"><p>LENOVO</p></div>
         <div class="brand"><p>DELL</p></div>
         <div class="brand"><p>ACER</p></div>
         <div class="brand"><p>ALIENWARE</p></div>
         <div class="brand"><p>APPLE</p></div>
         <div class="brand"><p>ASUS</p></div>
         <div class="brand"><p>MSI</p></div>
-    </section>
+      </div>
 
-    <section class="products">
-        <h1>Acer</h1>
-        <div class="product-grid">
-            <div class="product-card">
-                <p>Acer Swift 3</p>
-                <img src="/images/Acer-Swift-3.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Acer Swift 3</p>
-                <img src="/images/Acer-Swift-3.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Acer Swift 3</p>
-                <img src="/images/Acer-Swift-3.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Acer Swift 3</p>
-                <img src="/images/Acer-Swift-3.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Acer Swift 3</p>
-                <img src="/images/Acer-Swift-3.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Acer Swift 3</p>
-                <img src="/images/Acer-Swift-3.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Acer Swift 3</p>
-                <img src="/images/Acer-Swift-3.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Acer Swift 3</p>
-                <img src="/images/Acer-Swift-3.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-        </div>
-
-        <h1>ASUS</h1>
-        <div class="product-grid">
-            <div class="product-card">
-                <p>Asus Zenbook</p>
-                <img src="/images/Asus-Zenbook.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Asus Zenbook</p>
-                <img src="/images/Asus-Zenbook.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Asus Zenbook</p>
-                <img src="/images/Asus-Zenbook.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Asus Zenbook</p>
-                <img src="/images/Asus-Zenbook.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Asus Zenbook</p>
-                <img src="/images/Asus-Zenbook.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Asus Zenbook</p>
-                <img src="/images/Asus-Zenbook.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Asus Zenbook</p>
-                <img src="/images/Asus-Zenbook.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-        </div>
-
-        <h1>DELL</h1>
-        <div class="product-grid">
-            <div class="product-card">
-                <p>Dell xps 13</p>
-                <img src="/images/dell-xps-13.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Dell xps 13</p>
-                <img src="/images/dell-xps-13.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Dell xps 13</p>
-                <img src="/images/dell-xps-13.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Dell xps 13</p>
-                <img src="/images/dell-xps-13.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Dell xps 13</p>
-                <img src="/images/dell-xps-13.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-        </div>
-
-        <h1>LENOVO</h1>
-        <div class="product-grid">
-            <div class="product-card">
-                <p>Lenovo Legion 5</p>
-                <img src="/images/Legion-5.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Lenovo Legion 5</p>
-                <img src="/images/Legion-5.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Lenovo Legion 5</p>
-                <img src="/images/Legion-5.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Lenovo Legion 5</p>
-                <img src="/images/Legion-5.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Lenovo Legion 5</p>
-                <img src="/images/Legion-5.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Lenovo Legion 5</p>
-                <img src="/images/Legion-5.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Lenovo Legion 5</p>
-                <img src="/images/Legion-5.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-            <div class="product-card">
-                <p>Lenovo Legion 5</p>
-                <img src="/images/Legion-5.png" alt="">
-                <button type="submit">specifications</button>
-                <button type="submit">Buy Now</button>
-            </div>
-    </section>
-
-    <section class="discount">
-        <div class="discount-info">
-            <img src="/images/macbook-pro-2021-14in.png" alt="">
-
-            <div class="details">
-                <strong>Macbook Pro 2021 14'</strong>
-                <strong>specifications</strong>
-                <p>
-                    Display: 14.2, 3024x1964 native resolution' <br>
-                    Liquid Retina XDR display <br>
-                    120 Hz refresh rate <br>
-                    16GB RAM/32 GB RAM/64GB RAM <br>
-                    512 GB SSD/1TB SSD <br>
-                </p>
-                <div class="discount-buttons">
-                    <strike>$2500</strike>
-                    <button type="submit">GET NOW AT $2000</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="newsletter">
-        <h3>Subscribe to our weekly newsletter and receive updates on the latest discounts and laptops</h3>
-        <form action="">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email" required>
-            <button type="submit">SUBSCRIBE</button>
-        </form>
-    </section>
-
-    <footer>
-        <div class="socials">
-            <h3>Socials</h3>
-            <a href=""><i class="fab fa-facebook-f"></i>Facebook</a>
-            <a href=""><i class="fab fa-twitter"></i>Twitter</a>
-            <a href=""><i class="fab fa-instagram"></i>Instagram</a>
-            <a href=""><i class="fab fa-whatsapp"></i>Whatsapp</a>
-        </div>
-        <div class="categories">
-            <h3>Categories</h3>
-            <div class="brand"><p>HP</p></div>
-            <div class="brand"><p>LENOVO</p></div>
-            <div class="brand"><p>DELL</p></div>
-            <div class="brand"><p>ACER</p></div>
-            <div class="brand"><p>ALIENWARE</p></div>
-            <div class="brand"><p>APPLE</p></div>
-            <div class="brand"><p>ASUS</p></div>
-            <div class="brand"><p>MSI</p></div>
-        </div>
-
-        <div class="contact">
-            <h3>Contact</h3>
-            <a href=""><i class="fas fa-phone-alt"></i>+25197898985</a>
-            <a href=""><i class="far fa-paper-plane"></i>edumuriithi58@gmail.com</a>
-            <a href=""><i class="fas fa-map-marker-alt"></i>Nairobi, Kenya</a>
-        </div>
+      <div class="contact">
+        <h3>Contact</h3>
+        <a href=""><i class="fas fa-phone-alt"></i>+25197898985</a>
+        <a href=""><i class="far fa-paper-plane"></i>edumuriithi58@gmail.com</a>
+        <a href=""><i class="fas fa-map-marker-alt"></i>Nairobi, Kenya</a>
+      </div>
     </footer>
 
     <small class="copyright">Copyright &copy;2021 Edwin Karimi</small>
-    
+
     <script src="/main.js"></script>
-</body>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <script>
+      new Glide(".glide", {
+          type: 'carousel',
+          autoplay: 2000,
+          startAt: 0,
+          perView: 1,
+      }).mount();
+    </script>
+  </body>
 </html>

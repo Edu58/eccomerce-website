@@ -99,7 +99,7 @@ nav .list .home {
     width: 60%;
     top: 8%;
     right: 0;
-    z-index: 1;
+    z-index: 10;
     transition: 2s;
   }
 
@@ -117,13 +117,16 @@ nav .list .home {
 }
 
 .slideshow .slides {
-  width: 80%;
-  height: 90vh;
-  border-radius: 2px;
-  background: url("/images/Lenovo-Legion-5.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+.slideshow .slides .glide ul li img {
+  width: auto;
+  height: 30rem;
 }
 
 .brands {
@@ -207,6 +210,11 @@ nav .list .home {
 }
 
 @media screen and (max-width: 768px) {
+  .slideshow .slides {
+    width: 90%;
+    height: 30rem;
+  }
+
   .products .product-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -214,6 +222,12 @@ nav .list .home {
 }
 
 @media screen and (max-width: 425px) {
+
+  .slideshow .slides .glide ul li img {
+    width: auto;
+    height: 15rem;
+  }
+
   .products .product-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
